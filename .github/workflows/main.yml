@@ -81,8 +81,8 @@ jobs:
         with:
           tag_name: v${{ steps.date.outputs.date }}                #${{ github.ref }}
           release_name: Release v${{ steps.date.outputs.date }}    #${{ github.ref }}
-          body: TODO
-          draft: true
+          body: New upstream release.
+          draft: false
           prerelease: false
       - name: Upload Release Asset
         id: upload-release-asset 
