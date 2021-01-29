@@ -16,9 +16,9 @@ This repository contains the source code of the *SISSA Students' Vademecum*.
 
 ## Download
 
-You can download a PDF copy of the Vademecum from the [Releases](https://github.com/studentreps/vademecum/releases) page.
+Click the button below to download the latest PDF copy of the Vademecum:
 
-[![Go to the Releases page](https://img.shields.io/static/v1?color=EC1C24&label=&labelColor=323232&message=Releases&style=for-the-badge&logo=adobe-acrobat-reader)](https://github.com/studentreps/vademecum/releases)
+[![Download PDF](https://img.shields.io/static/v1?color=EC1C24&label=Download&labelColor=323232&message=PDF&style=for-the-badge&logo=adobe-acrobat-reader)](https://github.com/studentreps/vademecum/releases/latest/download/vademecum.pdf)
 
 ## Contribute
 
