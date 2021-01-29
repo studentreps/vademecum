@@ -208,7 +208,7 @@
         \medskip
         
         \textbf{Contribute!} \\
-        The \LaTeX source code of this document is available on SISSA's GitLab server:\\\url{https://git-scm.sissa.it/studentreps/vademecum}
+        The \LaTeX source code of this document is available on GitHub at:\\\url{https://github.com/studentreps/vademecum}
         
         Did you notice a mistake or do you have a suggestion? You are welcome to open an issue or a pull request at the address above; your contribution is a precious help!
 	}
