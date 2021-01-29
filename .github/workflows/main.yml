@@ -9,10 +9,10 @@ on:
   #  branches: [ main ]
   #pull_request:
   #  branches: [ main ]
-  # Triggers the workflow anytime someone creates a branch or tag, which triggers the create event.
-  # Restricted to the main branch
+  # Triggers the workflow anytime someone creates a tag, which triggers the create event.
   create:
-     branches: [ main ]
+     tags:
+       - 'v*' # Push events to matching v*, i.e. v1.0
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -61,3 +61,32 @@ jobs:
           # Artifact name
           name: vademecum
           path: vademecum.pdf
+  deploy:    
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v2.0.8
+        with:
+          name: vademecum
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.1.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: v0.0 #${{ github.ref }}
+          release_name: Release v0.0 #${{ github.ref }}
+          body: TODO
+          draft: true
+          prerelease: false
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing its ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: vademecum.pdf
+          asset_name: vademecum.pdf
+          asset_content_type: application/pdf
