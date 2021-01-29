@@ -5,14 +5,14 @@ name: CI
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  #push:
-  #  branches: [ main ]
-  #pull_request:
-  #  branches: [ main ]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   # Triggers the workflow anytime someone creates a tag, which triggers the create event.
-  create:
-     tags:
-       - 'v*' # Push events to matching v*, i.e. v1.0
+  #create:
+  #   tags:
+  #     - 'v*' # Push events to matching v*, i.e. v1.0
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -63,8 +63,12 @@ jobs:
           path: vademecum.pdf
   deploy:    
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, '[release]')"
     needs: build
     steps:
+      - name: Get Current Date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d')"
       - name: Download Build Artifact
         uses: actions/download-artifact@v2.0.8
         with:
@@ -75,8 +79,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: v${{ steps.date.outputs.date }}                #${{ github.ref }}
+          release_name: Release v${{ steps.date.outputs.date }}    #${{ github.ref }}
           body: TODO
           draft: true
           prerelease: false
