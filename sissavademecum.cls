@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                         %
 %                  SISSA Vademecum Class                  %
-%                   version 2021/01/27                    %
+%                   version 2021/02/12                    %
 %                                                         %
 % Authors: SISSA Students' Representatives                %
 %          <studentreps@sissa.it>                         %
@@ -18,7 +18,7 @@
 % Class info                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sissavademecum}[2021/01/27 SISSA Vademecum Class]
+\ProvidesClass{sissavademecum}[2021/02/12 SISSA Vademecum Class]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,6 +36,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
 \RequirePackage{graphicx}
+\RequirePackage[export]{adjustbox}
 \RequirePackage{transparent}
 \RequirePackage{tikz}
 \RequirePackage{eso-pic}
