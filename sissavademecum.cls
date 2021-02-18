@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                         %
 %                  SISSA Vademecum Class                  %
-%                   version 2021/02/12                    %
+%                   version 2021/02/18                    %
 %                                                         %
 % Authors: SISSA Students' Representatives                %
 %          <studentreps@sissa.it>                         %
@@ -18,7 +18,7 @@
 % Class info                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sissavademecum}[2021/02/12 SISSA Vademecum Class]
+\ProvidesClass{sissavademecum}[2021/02/18 SISSA Vademecum Class]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,6 +29,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{lmodern}
+\RequirePackage[fixed]{fontawesome5}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,7 +182,7 @@
             \begin{minipage}{0.5\textwidth}
                 \vspace{2cm}\hspace{-3 cm} % Whitespace between the vertical line and title page text
                 \parbox[b]{4\textwidth}{   % Paragraph box which restricts text to less than the width of the page
-                    {\noindent \Huge  \textsc{Students Vademecum}}\\[3\baselineskip] % Title
+                    {\noindent \Huge  \textsc{Student Vademecum}}\\[3\baselineskip] % Title
                     {\noindent \large \textit{\textsc{Advice to survive and thrive, from students to students}}}\\[33\baselineskip] % Subtitle
                     %{ \Large \textsc{}()}\\[25\baselineskip] % Author
                     { Version: \titlepagedate{\today} }\\[\baselineskip] % Version (date)
@@ -211,7 +212,7 @@
         \textbf{Contribute!} \\
         The \LaTeX source code of this document is available on GitHub at:\\\url{https://github.com/studentreps/vademecum}
         
-        Did you notice a mistake or do you have a suggestion? You are welcome to open an issue or a pull request at the address above; your contribution is a precious help!
+        Did you notice a mistake or do you have a suggestion? You are welcome to open an issue or a pull request at the address above; any contribution is of great assistance!
 	}
 	
 	% --- Reset everything --- %
