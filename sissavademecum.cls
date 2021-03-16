@@ -66,6 +66,7 @@
 \RequirePackage{titlesec}             % Easier section customizations
 \RequirePackage{ccicons}
 \RequirePackage{booktabs}
+\RequirePackage{comment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
