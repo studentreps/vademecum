@@ -223,6 +223,20 @@
 	
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Parts Style Setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{chngcntr}
+\usepackage{fmtcount}
+\titlecontents{part}[0em]{\large\bfseries\protect\addvspace{15pt}\titlerule\addvspace{1ex}}%
+{ }{}%
+{\hfill\contentspage}[\addvspace{0.5ex}\titlerule\addvspace{1ex}]%
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Chapter Style Setup                              %
