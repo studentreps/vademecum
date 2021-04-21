@@ -64,6 +64,9 @@
 \RequirePackage{marvosym}             % Produce ``€'' with \EUR{}
 \RequirePackage[level]{datetime}      % Format dates; "level" produces st,nd,rd,th at text level
 \RequirePackage{titlesec}             % Easier section customizations
+\RequirePackage{titletoc}
+\RequirePackage{chngcntr}
+\RequirePackage{fmtcount}
 \RequirePackage{ccicons}
 \RequirePackage{booktabs}
 \RequirePackage{comment}
@@ -223,19 +226,13 @@
 	
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Parts Style Setup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{titlesec}
-\usepackage{titletoc}
-\usepackage{chngcntr}
-\usepackage{fmtcount}
 \titlecontents{part}[0em]{\large\bfseries\protect\addvspace{15pt}\titlerule\addvspace{1ex}}%
 { }{}%
 {\hfill\contentspage}[\addvspace{0.5ex}\titlerule\addvspace{1ex}]%
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
