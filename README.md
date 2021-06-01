@@ -24,3 +24,5 @@ Click the button below to download the latest PDF copy of the Vademecum:
 
 Did you notice a mistake or do you have a suggestion?
 You are welcome to open an issue or a pull request using the buttons above; your contribution is a precious help!
+
+Take a look at our [contribution guide](CONTRIBUTING.md) for further info.
