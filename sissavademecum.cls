@@ -70,6 +70,7 @@
 \RequirePackage{ccicons}
 \RequirePackage{booktabs}
 \RequirePackage{comment}
+\RequirePackage[most]{tcolorbox}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
