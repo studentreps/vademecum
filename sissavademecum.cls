@@ -45,7 +45,7 @@
     margin        = 2.8cm  ,
     bottom        = 3cm    ,
     headsep       = 0.5cm  ,
-    top           = 3cm    ,
+    top           = 2.5cm    ,
     includefoot            ,
     footskip      = 30pt   ,
     headheight    = 13.6pt ,
@@ -80,7 +80,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{1pt}    % Top rule width
 \fancyfoot[C]{\thepage}               % Page number at center bottom
-\setcounter{tocdepth}{2}              % Index depth
+\setcounter{tocdepth}{1}              % Index depth
 %\renewcommand\sectionmark[1]{\markright{\thesection.\ #1}}
 %\renewcommand{\thesection}{\arabic{section}}
 \setlength{\headheight}{32pt}
