@@ -30,6 +30,8 @@
 \RequirePackage[english]{babel}
 \RequirePackage{lmodern}
 \RequirePackage[fixed]{fontawesome5}
+\RequirePackage{advdate}
+\RequirePackage{float}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
