@@ -56,7 +56,7 @@ jobs:
           # Instruct latexmk to use XeLaTeX
           #latexmk_use_xelatex: # optional
       - name: Upload vademecum.pdf
-        uses: actions/upload-artifact@v2.2.2
+        uses: actions/upload-artifact@v4.6.2
         with:
           # Artifact name
           name: vademecum
