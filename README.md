@@ -8,7 +8,7 @@
         <a href="https://github.com/studentreps/vademecum/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/studentreps/vademecum?style=flat-square"></a>
         <a href="https://github.com/studentreps/vademecum/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/studentreps/vademecum?style=flat-square"></a>
         <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg?color=%234AA4C6&style=flat-square" alt="License"></a>
-        <a href="https://github.com/studentreps/vademecum/actions?query=workflow%3ACI"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/studentreps/vademecum/CI?logo=github&style=flat-square"></a>
+        <a href="https://github.com/studentreps/vademecum/actions?query=workflow%3ACI"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/studentreps/vademecum/.github/workflows/main.yml?branch=main&logo=github&style=flat-square"></a>
     </p>
 </div>
 
