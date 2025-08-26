@@ -70,7 +70,7 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y.%m.%d')"
       - name: Download Build Artifact
-        uses: actions/download-artifact@v2.0.8
+        uses: actions/download-artifact@v5.0.0
         with:
           name: vademecum
       - name: Create Release
